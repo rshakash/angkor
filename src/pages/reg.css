@@ -66,9 +66,23 @@ padding: 3px;
         padding: 0;
         margin: 0;
     }
+    .inputthings{
+        padding: 10px;
+        /* text-decoration: none; */
+    }
+    /* #regbtn{
+        margin-left: 10%;
+    } */
 } 
+
+.outerbutton{
+    /* position: relative; */
+    text-align: center;
+}
 #regbtn{
-    margin: auto;
-    justify-content: center;
-    align-items: center;
+    /* position: absolute; */
+      /* left: 25%; */
+}
+#loglink{
+    text-align: center;
 }

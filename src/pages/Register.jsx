@@ -40,12 +40,14 @@ const Register = ({registerUser, errors, message}) => {
             </div>
                 {/* <hr/> */}
             
-            <Link to="/login" className="text-blue-500 text-sm mx-[70px] align-middle justify-center  hover:text-blue-700">Already a user? Login</Link>
+            
                 <br />            
-            <div>
+            <div className="outerbutton">
                 <input type="submit" value="Register" className="font-bold bg-blue-500 text-white w-[200px] h-10 px-2 py-2 rounded-lg border-slate-700 border-3  hover:bg-blue-600 hover:cursor-pointer" id="regbtn" />
             </div>
-            
+            <div id="loglink">
+            <Link to="/login" className="text-blue-500 text-sm mx-[70px] justify-center hover:text-blue-700">Already a user? Login</Link>
+            </div>
         </form>
         </div>
         <img src="https://static.vecteezy.com/system/resources/previews/000/655/234/original/farmers-working-in-farm-cartoons-vector.jpg" alt="" className="rounded-r-xl" id="img"/>
