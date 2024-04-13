@@ -8,11 +8,11 @@ const Messagesc = () => {
         <div id="messages">
             <div className="message">
                 <div className="sender">User 1</div>
-                <div className="content"><input type="text" /></div>
+                <div className="content">Hello, How are u from?</div>
             </div>
             <div className="message">
                 <div className="sender">User 2</div>
-                <div className="content"><input type="text" /></div>
+                <div className="content">I'm from good, thanks!</div>
             </div>
         </div>
         <div id="message-input">
