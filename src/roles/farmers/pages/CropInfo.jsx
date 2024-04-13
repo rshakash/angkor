@@ -1,8 +1,13 @@
-import React from 'react'
+import Navbar from '../Components/Navbar'
 
 const CropInfo = () => {
   return (
-    <div>CropInfo</div>
+    <div>
+      <Navbar />
+      <div>
+        CropInfo
+      </div>
+    </div>
   )
 }
 

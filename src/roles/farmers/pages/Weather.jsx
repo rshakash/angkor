@@ -2,6 +2,7 @@ import { useState } from 'react'
 import axios from "axios"
 import WeatherData from '../Components/WeatherData'
 import './weather.css'
+import Navbar from '../Components/Navbar'
 
 const Weather = () => {
 
@@ -23,7 +24,9 @@ const Weather = () => {
   }
 
   return (
-    <div className='weather-body'>
+    <div>
+      <Navbar />
+      <div className='weather-body'>
       <div className="weather-container">
 		<h1>Weather Forcast</h1>
     <form id="weather-form" onSubmit={handleClick}>
@@ -35,6 +38,7 @@ const Weather = () => {
     </div>
     
   </div>
+    </div>
     </div>
   )
 }

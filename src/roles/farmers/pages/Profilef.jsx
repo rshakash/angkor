@@ -1,8 +1,11 @@
 import React from 'react'
 import './farmerprofile.css'
+import Navbar from '../Components/Navbar'
 const Profilef = () => {
   return (
-    <div className="allcnt">
+    <div>
+        <Navbar />
+        <div className="allcnt">
        
     <div>
     <div className="containerprofile mx-auto ">
@@ -59,6 +62,7 @@ const Profilef = () => {
     </div>
     </div>
     </div> 
+    </div>
     </div>
   )
 }
