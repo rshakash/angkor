@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import axios from "axios"
 import WeatherData from '../Components/WeatherData'
+import './weather.css'
 
 const Weather = () => {
 
@@ -22,20 +23,18 @@ const Weather = () => {
   }
 
   return (
-    <div>
-      <header>
-		<h1>Weather Search</h1>
-	</header>
-	<main>
-		<section id="weather-search">
-			<h2>Search for Weather</h2>
-			<form id="weather-form" onSubmit={handleClick}>
-				<input type="text" id="city-input" placeholder="Enter city name" value={city} onChange={(e) => setCity(e.target.value)}/>
-				<button type="submit">Search</button>
-			</form>
-		</section>
-    <WeatherData weather={weather} />
-	</main>
+    <div className='weather-body'>
+      <div className="weather-container">
+		<h1>Weather Forcast</h1>
+    <form id="weather-form" onSubmit={handleClick}>
+    <input type="text" id="city-input" placeholder="Enter city name..." value={city} onChange={(e) => setCity(e.target.value)}></input>
+    <button>Search</button>
+    </form>
+    <div id="weather-details">
+    <WeatherData weather={weather}/>
+    </div>
+    
+  </div>
     </div>
   )
 }
