@@ -3,9 +3,9 @@ import './farmerprofile.css'
 import Navbar from '../Components/Navbar'
 const Profilef = () => {
   return (
-    <div>
+    <div className='site-container'>
         <Navbar />
-        <div className="allcnt">
+        <div className="allcnt components">
        
     <div>
     <div className="containerprofile mx-auto ">
@@ -16,12 +16,12 @@ const Profilef = () => {
         </div>
         <div className="details px-6 justify-center items-center ">
         <h1 className="text-2xl font-bold text-left">John Doe</h1>
-        <p className="text-gray-500 text-left">@johndoe</p>
-        <p className="text-gray-500 text-left"><span className="text-blue-500 font-semibold">1,234</span> posts - <span className="text-blue-500 font-semibold">567</span> followers - <span className="text-blue-500 font-semibold">890</span> following</p>
+        <p className="text-gray-700 text-left font-bold">@johndoe</p>
+        <p className="text-gray-700 text-left font-semibold"><span className="text-blue-500 font-semibold">1,234</span> posts - <span className="text-blue-500 font-semibold">567</span> followers - <span className="text-blue-500 font-semibold">890</span> following</p>
         </div>
-        <div className="connectbtn">
+        {/* <div className="connectbtn">
         <button className='text-white bg-lime-500 rounded-full p-3 font-bold hover:bg-lime-700'>Connect</button>
-        </div>
+        </div> */}
         </div>
         {/* <div className="stats">
             <span className="text-blue-500 font-semibold justify-center">1,234</span>
