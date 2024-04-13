@@ -2,7 +2,6 @@ import HomePage from "./pages/HomePage";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 
-import Farmer from "./roles/farmers/pages/Farmer";
 import Customer from "./roles/customers/pages/Customer";
 
 import { Routes, Route, Navigate, RouterProvider } from "react-router-dom";
@@ -76,21 +75,21 @@ const Router = () => {
             <Route path="/login" element={user ? <Navigate to={`/${user.role}`} />: <Login handleClick={getUser}/>}/>
             <Route path="/register" element={user ? <Navigate to="/" /> : <Register registerUser={registerUser} errors={registerErrors} message={registerMessage}/>}/>
 
-            <Route path="/farmer" element={user ? (user.role == "farmer" ? <Farmer /> : <Navigate to="/login" />): <Navigate to="/login" />} />
-            <Route path="/farmer/cropInfo" element={<CropInfo />} />
-            <Route path="/farmer/profile" element={<Profilef />} />
-            <Route path="/farmer/weather" element={<Weather />} />
-            <Route path="/farmer/history" element={<History />} />
-            <Route path="/farmer/messages" element={<Messagesf />} />
-            <Route path="/farmer/search" element={<Searchf />} />
+            <Route path="/farmer" element={user ? (user.role == "farmer" ? <Profilef /> : <Navigate to="/login" />): <Navigate to="/login" />} />
+            <Route path="/farmer/cropInfo" element={user ? (user.role == "farmer" ? <CropInfo /> : <Navigate to="/login" />): <Navigate to="/login" />} />
+            <Route path="/farmer/profile" element={user ? (user.role == "farmer" ? <Profilef /> : <Navigate to="/login" />): <Navigate to="/login" />} />
+            <Route path="/farmer/weather" element={user ? (user.role == "farmer" ? <Weather /> : <Navigate to="/login" />): <Navigate to="/login" />} />
+            <Route path="/farmer/history" element={user ? (user.role == "farmer" ? <History /> : <Navigate to="/login" />): <Navigate to="/login" />} />
+            <Route path="/farmer/messages" element={user ? (user.role == "farmer" ? <Messagesf /> : <Navigate to="/login" />): <Navigate to="/login" />} />
+            <Route path="/farmer/search" element={user ? (user.role == "farmer" ? <Searchf /> : <Navigate to="/login" />): <Navigate to="/login" />} />
 
             <Route path="/customer" element={user ? (user.role == "customer" ? <Customer /> : <Navigate to="/login" />): <Navigate to="/login" />} />
-            <Route path="/customer/home" element={<Home />} />
-            <Route path="/customer/profile" element={<Profilec />} />
-            <Route path="/customer/explore" element={<Explore />} />
-            <Route path="/customer/transactions" element={<Transactions />} />
-            <Route path="/customer/messages" element={<Messagesc />} />
-            <Route path="/customer/search" element={<Searchc />} />
+            <Route path="/customer/home" element={user ? (user.role == "customer" ? <Home /> : <Navigate to="/login" />): <Navigate to="/login" />} />
+            <Route path="/customer/profile" element={user ? (user.role == "customer" ? <Profilec /> : <Navigate to="/login" />): <Navigate to="/login" />} />
+            <Route path="/customer/explore" element={user ? (user.role == "customer" ? <Explore /> : <Navigate to="/login" />): <Navigate to="/login" />} />
+            <Route path="/customer/transactions" element={user ? (user.role == "customer" ? <Transactions /> : <Navigate to="/login" />): <Navigate to="/login" />} />
+            <Route path="/customer/messages" element={user ? (user.role == "customer" ? <Messagesc /> : <Navigate to="/login" />): <Navigate to="/login" />} />
+            <Route path="/customer/search" element={user ? (user.role == "customer" ? <Searchc /> : <Navigate to="/login" />): <Navigate to="/login" />} />
 
         </Routes>
       </div>
