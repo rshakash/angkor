@@ -76,8 +76,7 @@ const Router = () => {
             <Route path="/login" element={user ? <Navigate to={`/${user.role}`} />: <Login handleClick={getUser}/>}/>
             <Route path="/register" element={user ? <Navigate to="/" /> : <Register registerUser={registerUser} errors={registerErrors} message={registerMessage}/>}/>
 
-            {/* <Route path="/farmer" element={user ? (user.role == "farmer" ? <Farmer /> : <Navigate to="/login" />): <Navigate to="/login" />} /> */}
-            <Route path="/farmer" element={<Farmer />} />
+            <Route path="/farmer" element={user ? (user.role == "farmer" ? <Farmer /> : <Navigate to="/login" />): <Navigate to="/login" />} />
             <Route path="/farmer/cropInfo" element={<CropInfo />} />
             <Route path="/farmer/profile" element={<Profilef />} />
             <Route path="/farmer/weather" element={<Weather />} />
@@ -85,8 +84,7 @@ const Router = () => {
             <Route path="/farmer/messages" element={<Messagesf />} />
             <Route path="/farmer/search" element={<Searchf />} />
 
-            {/* <Route path="/customer" element={user ? (user.role == "customer" ? <Customer /> : <Navigate to="/login" />): <Navigate to="/login" />} /> */}
-            <Route path="/customer" element={<Customer />} />
+            <Route path="/customer" element={user ? (user.role == "customer" ? <Customer /> : <Navigate to="/login" />): <Navigate to="/login" />} />
             <Route path="/customer/home" element={<Home />} />
             <Route path="/customer/profile" element={<Profilec />} />
             <Route path="/customer/explore" element={<Explore />} />
