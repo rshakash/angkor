@@ -1,0 +1,28 @@
+.post{
+    margin: 5px;}
+p{
+    background:white;
+}
+*{
+    padding: 5px;
+}
+img:hover{
+    opacity: 0.68;
+    cursor: pointer;
+}
+.stats{
+    align-items: center;
+    align-content: center;
+}
+.connectbtn{
+    /* align-items: center; */
+    align-content: center;
+}
+.profileholder{
+    display: flex;
+    justify-content: center;
+}
+.imgcnt{
+    vertical-align: middle;
+    align-content: center;
+}
