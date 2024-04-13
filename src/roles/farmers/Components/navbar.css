@@ -36,3 +36,7 @@
     align-content: center;
     text-align: center;
 }
+.logout{
+    position: absolute;
+    bottom: 10px;
+}

@@ -5,6 +5,7 @@ const HomePage = () => {
 
     return ( 
         <div className="body">
+          {/* <Navbar /> */}
             <div className="links">
           <Link to="/login" className="cta-1">Login</Link>
           <Link to="/register" className="cta-2">Register</Link>
