@@ -3,10 +3,9 @@ import './reg.css'
 
 const Register = ({registerUser, errors, message}) => {
     return (
-        <body>
-        <div >
-            <div className="container grid grid-cols-2 m-auto my-20  rounded-xl p-8" >
-            <div className="details bg-white p-9 rounded-l-xl">
+        <div className="main">
+            <div className="container" >
+            <div className="details rounded-l-xl">
         <h1 className="text-[34px] underline decoration-2">Register</h1>
         <br />
         
@@ -49,12 +48,9 @@ const Register = ({registerUser, errors, message}) => {
             
         </form>
         </div>
-         <div className="img">
-            <img src="https://static.vecteezy.com/system/resources/previews/000/655/234/original/farmers-working-in-farm-cartoons-vector.jpg" alt="img" className="rounded-r-xl size-auto"/>
+        <img src="https://static.vecteezy.com/system/resources/previews/000/655/234/original/farmers-working-in-farm-cartoons-vector.jpg" alt="" className="rounded-r-xl"/>
         </div>
         </div>
-        </div>
-        </body>
     );
 }
 
