@@ -2,6 +2,7 @@ import Navbar from '../Components/Navbar'
 import {useEffect, useState } from 'react'
 import axios from 'axios';
 import CropInfoData from '../Components/CropInfoData';
+import './CropInfo.css'
 
 
 const CropInfo = () => {
@@ -21,7 +22,7 @@ const CropInfo = () => {
 
   const handle = (e) => {
     e.preventDefault()
-    const selectedCrop = cropList.find(crop => crop.crop.name === cropValue)
+    const selectedCrop = cropList.find(crop => crop.crop.name.toLowerCase() === cropValue.toLowerCase())
     setCrop(selectedCrop)
   }
 
@@ -29,22 +30,23 @@ const CropInfo = () => {
 
   return (
     <div>
-      <Navbar />
-      <div>
-      <form onSubmit={handle}>
-        <label>
-          Crop Name: 
-				<input type="text" name="cropName" value={cropValue} onChange={(e) => setCropValue(e.target.value)}/>
-        </label>
-        
+      {/* <Navbar /> */}
+      <div className="crop-body">
+      <div className='crop-container'>
+      <h1>Crop Information</h1>
+      <form onSubmit={handle}> 
+      <div className="crop-search-bar">
+				<input type="text" name="cropName" className='crop-search-input' placeholder="Enter crop name..." value={cropValue} onChange={(e) => setCropValue(e.target.value)}/>
         <br />
-        <button type="submit">Submit</button>
+        <button type="submit" className='crop-search-button'>Submit</button>
+        </div>
       </form>
-
+      <div className="crop-info">
       <CropInfoData crop={crop.crop} />
+      </div>
     </div>
     </div>
-    
+    </div>
   )
 }
 

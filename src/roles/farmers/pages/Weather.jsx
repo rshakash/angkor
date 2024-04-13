@@ -30,8 +30,10 @@ const Weather = () => {
       <div className="weather-container">
 		<h1>Weather Forcast</h1>
     <form id="weather-form" onSubmit={handleClick}>
-    <input type="text" id="city-input" placeholder="Enter city name..." value={city} onChange={(e) => setCity(e.target.value)}></input>
-    <button>Search</button>
+      <div className="weather-search-bar">
+    <input type="text" id="city-input" className='weather-search-input' placeholder="Enter city name..." value={city} onChange={(e) => setCity(e.target.value)}></input>
+    <button className='weather-search-button'>Search</button>
+    </div>
     </form>
     <div id="weather-details">
     <WeatherData weather={weather}/>

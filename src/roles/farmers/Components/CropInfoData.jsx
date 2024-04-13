@@ -3,13 +3,13 @@ const CropInfoData = ({crop}) => {
         return (
             <div>
             <section>
-                <h2>Crop Information</h2>
+                
                 <p>Crop Name: {crop.name}</p>
-                <p>Crop Type: {crop.scientific_name}</p>
-                <p>Optimal Temperature: {crop.growth_period}</p>
-                <p>Optimal PH: {crop.optimal_temperature}</p>
-                <p>Optimal Humidity: {crop.optimal_ph}</p>
-                <p>Optimal Light: {crop.description}</p>
+                <p>Crop Scientific Name: {crop.scientific_name}</p>
+                <p>Optimal Growth period: {crop.growth_period}</p>
+                <p>Optimal temperature: {crop.optimal_temperature}</p>
+                <p>Optimal PH: {crop.optimal_ph}</p>
+                <p>Crop description: {crop.description}</p>
             </section>
             </div>
         )
