@@ -3,7 +3,7 @@ import './Login.css'
 
 const Login = ({ handleClick }) => {
   return (
-    <body className='root bg-pink-200'>
+    <div className='root'>
       <div className="loginmain ">
         <div className="login rounded-r-[15px]">
           <h1 className="heading">Login</h1>
@@ -36,7 +36,7 @@ const Login = ({ handleClick }) => {
         </div>
         <div className="image rounded-l-[15px]"></div>
       </div>
-    </body>
+    </div>
   );
 };
 

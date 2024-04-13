@@ -13,7 +13,7 @@ const Farmer = () => {
         <Link to="/farmer/search">Search</Link>
         <Link to="/farmer/profile">Profile</Link> 
         <Link to="/farmer/cropinfo">CropInfo</Link>
-        <a href='http://localhost:3000/logout'>Logout</a>
+        <a href='https://angkor-backend.onrender.com/logout'>Logout</a>
     </div>
   )
 }

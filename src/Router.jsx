@@ -34,7 +34,7 @@ const Router = () => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    await axios.post("http://localhost:3000/login", `email=${email}&password=${password}`)
+    await axios.post("https://angkor-backend.onrender.com/login", `email=${email}&password=${password}`)
     .then(res => res.data)
     .then(data => {
         const { user } = data
@@ -52,7 +52,7 @@ const Router = () => {
     const role = e.target.role.value;
     const username = e.target.username.value;
     console.log(email, password, confirmpassword, name, role, username)
-    await axios.post("http://localhost:3000/register", `email=${email}&password=${password}&confirmpassword=${confirmpassword}&name=${name}&role=${role}&username=${username}`)
+    await axios.post("https://angkor-backend.onrender.com/register", `email=${email}&password=${password}&confirmpassword=${confirmpassword}&name=${name}&role=${role}&username=${username}`)
     .then(res => res.data)
     .then(data => {
       const {errors} = data;
@@ -76,8 +76,7 @@ const Router = () => {
             <Route path="/login" element={user ? <Navigate to={`/${user.role}`} />: <Login handleClick={getUser}/>}/>
             <Route path="/register" element={user ? <Navigate to="/" /> : <Register registerUser={registerUser} errors={registerErrors} message={registerMessage}/>}/>
 
-            {/* <Route path="/farmer" element={user ? (user.role == "farmer" ? <Farmer /> : <Navigate to="/login" />): <Navigate to="/login" />} /> */}
-            <Route path="/farmer" element={<Farmer />} />
+            <Route path="/farmer" element={user ? (user.role == "farmer" ? <Farmer /> : <Navigate to="/login" />): <Navigate to="/login" />} />
             <Route path="/farmer/cropInfo" element={<CropInfo />} />
             <Route path="/farmer/profile" element={<Profilef />} />
             <Route path="/farmer/weather" element={<Weather />} />
@@ -85,8 +84,7 @@ const Router = () => {
             <Route path="/farmer/messages" element={<Messagesf />} />
             <Route path="/farmer/search" element={<Searchf />} />
 
-            {/* <Route path="/customer" element={user ? (user.role == "customer" ? <Customer /> : <Navigate to="/login" />): <Navigate to="/login" />} /> */}
-            <Route path="/customer" element={<Customer />} />
+            <Route path="/customer" element={user ? (user.role == "customer" ? <Customer /> : <Navigate to="/login" />): <Navigate to="/login" />} />
             <Route path="/customer/home" element={<Home />} />
             <Route path="/customer/profile" element={<Profilec />} />
             <Route path="/customer/explore" element={<Explore />} />
