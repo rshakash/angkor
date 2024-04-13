@@ -30,7 +30,7 @@ const CropInfo = () => {
 
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="crop-body">
       <div className='crop-container'>
       <h1>Crop Information</h1>

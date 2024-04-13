@@ -12,7 +12,7 @@ const Navbar = () => {
             <li className='navig'><i class="fa-solid fa-cloud p-1"></i><a href="/farmer/weather">Weather</a></li>
             <li className='navig'><i class="fa-solid fa-wheat-awn p-1"></i><a href="/farmer/cropinfo">CropInfo</a></li>
             <li className='navig'><i class="fa-solid fa-user-tie p-1"></i><a href="/farmer/profile">Profile</a></li>
-            <li className='navig'><i class="fa-solid fa-right-from-bracket p-1"></i><a href="/farmer/profile">Log Out</a></li>
+            <li className='navig logout'><i class="fa-solid fa-right-from-bracket p-1"></i><a href="/farmer/profile">Log Out</a></li>
           </ul>
     </nav>
   )
