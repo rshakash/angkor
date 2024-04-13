@@ -1,8 +1,13 @@
-import React from 'react'
+import Navbar from '../Components/Navbar'
 
 const Messagesf = () => {
   return (
-    <div>Messagesf</div>
+    <div>
+      <Navbar />
+      <div>
+        Messagesf
+      </div>
+    </div>
   )
 }
 

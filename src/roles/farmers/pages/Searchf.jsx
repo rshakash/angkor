@@ -1,8 +1,13 @@
-import React from 'react'
+import Navbar from '../Components/Navbar'
 
 const Searchf = () => {
   return (
-    <div>Searchf</div>
+    <div>
+      <Navbar />
+      <div>
+        Searchf
+      </div>
+    </div>
   )
 }
 

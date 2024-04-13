@@ -1,3 +1,4 @@
+import Navbar from '../Components/Navbar'
 import {useEffect, useState } from 'react'
 import axios from 'axios';
 import CropInfoData from '../Components/CropInfoData';
@@ -28,6 +29,8 @@ const CropInfo = () => {
 
   return (
     <div>
+      <Navbar />
+      <div>
       <form onSubmit={handle}>
         <label>
           Crop Name: 
@@ -40,6 +43,8 @@ const CropInfo = () => {
 
       <CropInfoData crop={crop.crop} />
     </div>
+    </div>
+    
   )
 }
 
