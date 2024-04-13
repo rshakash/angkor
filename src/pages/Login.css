@@ -67,8 +67,20 @@ input{
         .image{
             display: none;
         }
-        .login{
-            width: 80%;
-            border-radius: 10px;
+        .loginmain{
+            width: 100%;
+            height: 100%;
         }
+        .login{
+            /* width: 80%; */
+            /* border-radius: 10px; */
+            width: 100%;
+            height: 100%;
+            padding: auto;
+            margin: auto;
+        }
+        .root{
+            background-image: none;
+        }
+
     }
