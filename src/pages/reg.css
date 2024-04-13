@@ -30,7 +30,7 @@ input{
 :placeholder-shown{
 padding: 3px;
 }
-.container{
+.regcontainer{
     width: 75vw;
     height: 75vh;
     display: flex;
@@ -39,10 +39,36 @@ padding: 3px;
     border-radius: 12px;
     padding: 2rem;
     /* margin: 10%; */
+
 }
 .details{
     background-color: white;
     /*  bg-white p-9  */
     padding: 5%;
-    
+    width: 50%;
+}
+#img{
+    width: 50%;
+}
+@media screen and (max-width:1000px){
+    #img{
+        display: none;
+        
+    }
+    .details{
+        border-radius: 12px;
+        width: 100%;
+        height: 100%;
+    }
+    .regcontainer{
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+} 
+#regbtn{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
