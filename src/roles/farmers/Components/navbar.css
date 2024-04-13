@@ -1,0 +1,38 @@
+.navside{
+    width: 15vw;
+    /* background-color: aquamarine; */
+    height: 100vh;
+    position: fixed;
+}
+.components {
+    position: absolute;
+    left: 15vw;
+}
+.navig{
+    height: 60px;
+    padding: 5px;
+    align-items: center;
+    border-radius: 6px;
+    padding: 6px;
+    align-content: center;
+    font-size: medium;
+    font-weight: bold;
+}
+.navig:hover{
+    background-color: rgba(29, 112, 229, 0.808);
+    color: white;
+}
+#heading{
+    height: 80px;
+    vertical-align: middle;
+    text-align: center;
+    align-content: center;
+}
+#navholder{
+    /* text-align: center; */
+    vertical-align: middle;
+}
+.parent{
+    align-content: center;
+    text-align: center;
+}
