@@ -34,7 +34,7 @@ const Router = () => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    await axios.post("http://localhost:3000/login", `email=${email}&password=${password}`)
+    await axios.post("https://angkor-backend.onrender.com/login", `email=${email}&password=${password}`)
     .then(res => res.data)
     .then(data => {
         const { user } = data
@@ -52,7 +52,7 @@ const Router = () => {
     const role = e.target.role.value;
     const username = e.target.username.value;
     console.log(email, password, confirmpassword, name, role, username)
-    await axios.post("http://localhost:3000/register", `email=${email}&password=${password}&confirmpassword=${confirmpassword}&name=${name}&role=${role}&username=${username}`)
+    await axios.post("https://angkor-backend.onrender.com/register", `email=${email}&password=${password}&confirmpassword=${confirmpassword}&name=${name}&role=${role}&username=${username}`)
     .then(res => res.data)
     .then(data => {
       const {errors} = data;
