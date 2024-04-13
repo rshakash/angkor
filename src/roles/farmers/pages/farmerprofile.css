@@ -3,9 +3,6 @@
 p{
     background:white;
 }
-*{
-    padding: 5px;
-}
 img:hover{
     opacity: 0.68;
     cursor: pointer;
