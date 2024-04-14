@@ -30,6 +30,14 @@ To build a web app which would allow farmers to directly interact with the custo
 - Render :- For hosting the backend
 - Clever Cloud :- For hosting the database
 
+## Libraries and Dependencies
+- axios
+- react
+- react-dom
+- react-router-dom
+- vite
+- tailwindcss
+
 ## Installations steps
 Clone the git repo
    
