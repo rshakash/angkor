@@ -4,7 +4,7 @@ import Navbar from '../CustomerComponents/NavbarC'
 const Home = () => {
   return (
     <div><Navbar />
-    <div>Home</div>
+    <div></div>
     </div>
   )
 }

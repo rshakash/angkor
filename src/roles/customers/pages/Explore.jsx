@@ -5,7 +5,9 @@ const Explore = () => {
   return (
     <div>
       <Navbar />
-      <div>Explore</div>
+      <div className='components'>
+        <h1>Explore</h1>
+      </div>
     </div>
   )
 }

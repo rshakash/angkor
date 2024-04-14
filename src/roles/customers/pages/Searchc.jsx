@@ -6,7 +6,7 @@ const Searchc = () => {
   return (
     <div><Navbar />
     <div className='search-container'>
-    <input type="text" className='search-input' placeholder='Search Something'/>
+    <input type="text" className='search-input' placeholder='Search users'/>
     <button className="searchbtn">Search</button>
     </div>
     </div>
