@@ -1,5 +1,4 @@
 Official ByteVerse Hackathon Solution
-
 Team Name - The Web's Watch 
 
 ## Core Idea
@@ -21,7 +20,7 @@ To build a web app which would allow farmers to directly interact with the custo
 - Farmers and customers can login and register
 - Farmers can access tools  like weather and getting information about a crop by the crop name
 
-## Technologies and tool being used:
+## Technologies Stack
 - React :- for frontend
 - Tailwind CSS
 - NodeJs & ExpressJs :- for server and api
@@ -31,14 +30,21 @@ To build a web app which would allow farmers to directly interact with the custo
 - Render :- For hosting the backend
 - Clever Cloud :- For hosting the database
 
+## Installations steps
+Clone the git repo
+   
+   ```git clone https://github.com/rshakash/angkor.git```
+
+Open the cloned folder
+
+```cd angkor```
+
+Install the package dependencies
+
+```npm install```
+
+Start the server
+
+```npm run dev```
+
 [Github repository of Backend](https://github.com/rshakash/angkor-backend)
-
-## Summary
-We implemented authentication and authorization with help of passportjs, bcrypt, expressjs, react router and PostgreSQL database. Then we hosted the backend on the render as a web service and database on clever cloud. Then we made the api for getting the information about crops with their names. Then we designed the layout for different components of farmers for desktop devices and for few componets of customers for desktop devices. 
-
-## Future plans for the remainder of Hackathon
-- To complete layouts of all pages of both customers and farmers
-- To make app responsive
-- Let farmers list their products and post their updates
-- Let customers follow and connect to farmers
-- Let farmers follow and connect to other farmers
