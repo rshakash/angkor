@@ -1,10 +1,14 @@
 import React from 'react'
 import Navbar from '../CustomerComponents/NavbarC'
+import './searchC.css'
 
 const Searchc = () => {
   return (
     <div><Navbar />
-    <div>Search</div>
+    <div className='search-container'>
+    <input type="text" className='search-input' placeholder='Search Something'/>
+    <button className="searchbtn">Search</button>
+    </div>
     </div>
   )
 }
