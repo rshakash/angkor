@@ -50,3 +50,11 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 600px){
+    #messaging-page {
+        left: 0;
+        width: 100vw;
+        height: 93vh;
+    }
+}
