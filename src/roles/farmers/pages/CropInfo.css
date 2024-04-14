@@ -85,8 +85,18 @@
   }
   .crop-info{
     margin-top: 20px;
-    border: 1px solid #ccc;
     padding: 20px;
     border-radius: 4px;
     display: inline-block;
+  }
+  .crop-results{
+
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  span{
+    font-weight: 750;
   }
