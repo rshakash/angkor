@@ -1,7 +1,9 @@
+import Navbar from '../CustomerComponents/NavbarC'
 const Profilec = () => {
 
   return (
     <div>
+      <Navbar />
       <div className="allcnt">
         <div className="containerprofile mx-auto ">
           <div className="profile-card">

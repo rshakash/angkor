@@ -1,10 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from '../CustomerComponents/NavbarC'
+
 
 
 const Farmer = () => {
   return (
-    <nav className="navside">
+    <div>
+      <Navbar />
+    
+    {/* <nav className="navside">
         <div id='heading'>
         <h1 className='font-extrabold text-4xl'>Angkor</h1>
         </div>
@@ -17,7 +22,8 @@ const Farmer = () => {
         <li className='navig'><i class="fa-solid fa-magnifying-glass p-1"></i><Link to="/customer/search">Search</Link></li>
         <a href='https://angkor-backend.onrender.com/logout'>Logout</a>
         </ul>
-    </nav>
+    </nav> */}
+    </div>
   )
 }
 
