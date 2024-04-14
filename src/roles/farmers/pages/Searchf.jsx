@@ -2,10 +2,13 @@ import Navbar from '../Components/Navbar'
 
 const Searchf = () => {
   return (
-    <div>
+    <div className='site-container'>
       <Navbar />
-      <div>
-        Searchf
+      <div className='components'>
+        <form>
+          <input type='text' placeholder='Search' className='searchbar' />
+          <button className='searchbtn' type='submit'>Search</button>
+        </form>
       </div>
     </div>
   )
