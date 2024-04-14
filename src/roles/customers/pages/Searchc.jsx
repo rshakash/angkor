@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from '../CustomerComponents/NavbarC'
 
 const Searchc = () => {
   return (
-    <div>Searchc</div>
+    <div><Navbar />
+    <div>Search</div>
+    </div>
   )
 }
 

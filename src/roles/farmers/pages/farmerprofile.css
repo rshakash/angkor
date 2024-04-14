@@ -3,7 +3,7 @@
 p{
     background:white;
 }
-img:hover{
+.post>img:hover{
     opacity: 0.68;
     cursor: pointer;
 }

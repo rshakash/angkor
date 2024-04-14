@@ -36,11 +36,19 @@
     align-content: center;
     text-align: center;
 }
-#logout{
+.logout{
+    height: 60px;
+    padding: 5px;
+    align-items: center;
+    border-radius: 6px;
+    padding: 6px;
+    align-content: center;
+    font-size: medium;
+    font-weight: bold;
     position: absolute;
     bottom: 10px;
 }
-#logout:hover{
-    background-color: rgba(249, 28, 28, 0.815);
+.logout:hover{
+    background-color: rgb(255, 0, 0);
     color: white;
 }

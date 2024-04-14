@@ -1,9 +1,11 @@
 import React from 'react'
 import './message.css'
+import Navbar from '../CustomerComponents/NavbarC'
 
 const Messagesc = () => {
   return (
     <div>
+      <Navbar/>
       <div id="messaging-page">
         <div id="messages">
             <div className="message">
